@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/ico">
+  <title>Movie search</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__title">
+      <h1 class="title">MovieSearch</h1>
+    </div>
+    <div class="report"></div>
+  </header>
+  <div class="wrapper">
+    <!-- Api message -->
+    <div class="message-container">
+      <p class="message-title">Requests log</p>
+    </div>
+    <!-- Search information -->
+    <div class="search-info">
+      <p class="search-info__message">
+        <span class="message__text"></span>
+        <span class="message__target"></span>
+      </p>
+    </div>
+    <!-- Search -->
+    <div class="search">
+      <form method="GET" id="search_form">
+        <div class="row-search__input">
+          <input name="input" class="search__input" type="text" placeholder="Find" autocomplete="off" autofocus>
+          <span class="search-keyboard"></span>
+          <span class="search-clear"></span>
+          <span class="search__button"></span>
+          <div id="loadingProgress" class="hidden">
+            <div class="loadingProgress"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper disappear">
+
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <script src="swiper.min.js"></script>
+</body>
+<footer class="footer">
+  <p class="footer-text">RS School 2012q1</p>
+  <p class="contacts">Yuriy Ulivanov @Aldtlt</p>
+</footer>
+
+</html>

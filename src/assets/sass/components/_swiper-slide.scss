@@ -1,0 +1,91 @@
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: $main-color;
+
+  /* Center slide text vertically */
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-container {
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.poster-container {
+  margin: 0 auto;
+  width: 300px;
+  height: 450px;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.movie-poster:hover {
+  outline: 3px solid #ffffff;
+}
+
+.movie-name {
+  display: block;
+  height: 55px;
+  margin: 20px 0 10px 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.7s;
+}
+
+.movie-name:hover {
+  color: #ffffff;
+}
+
+.movie-imdb {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-year {
+  margin: 5px 0;
+}
+
+.imdb-star {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../image/star.png");
+  background-size: cover;
+}
+
+.imdb {
+  display: inline-block;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  border-radius: 100%;
+  transition: 0.5s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #7780c9;
+}

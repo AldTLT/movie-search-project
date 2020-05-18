@@ -1,0 +1,46 @@
+.report {
+  width: 60px;
+  height: 60px;
+  margin-right: 40px;
+  background-image: url(../image/report.svg);
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.message {
+  width: 90%;
+  height: 22px;
+  margin: 0;
+  padding-left: 30px;
+  font-family: inherit;
+  color: #af1212;
+  overflow: hidden;
+}
+
+.request {
+  color: #19bb4a;
+}
+
+.message-title {
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.report-active {
+  transform: translateY(800px);
+}
+
+.report:hover {
+  background-image: url(../image/report-active.svg);
+}
+
+@media screen and (max-width: 375px) {
+  .report {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+}

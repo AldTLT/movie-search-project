@@ -1,0 +1,30 @@
+.search-info {
+  position: absolute;
+  top: -100px;
+  z-index: 55;
+  width: 80%;
+  max-width: 500px;
+  min-width: 320px;
+  height: auto;
+  max-height: 94px;
+  padding-top: 12px;
+  background-color: #8b3e3e;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.search-info__message {
+  max-height: 62px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: $color-header-text;
+  overflow: hidden;
+}
+
+.message__target {
+  color: #256aff;
+}
+
+.search-info-active {
+  transform: translateY(80px);
+}

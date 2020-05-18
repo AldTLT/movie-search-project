@@ -1,0 +1,13 @@
+.header {
+  position: relative;
+  display: flex;
+  z-index: 50;
+  width: 100%;
+  height: $header-height;
+  min-width: 320px;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-header-text;
+  background-color: $color-header;
+  border-bottom: 5px solid $color-header + 20;
+}

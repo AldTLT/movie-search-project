@@ -1,0 +1,79 @@
+.wrapper-keyboard {
+  position: absolute;
+  top: -1 * $keyboard-height;
+  z-index: 5;
+  display: flex;
+  width: 600px;
+  height: $keyboard-height;
+  flex-wrap: wrap;
+  background-color: #4d4d4d;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.keyboard {
+  display: grid;
+  grid-template: repeat(10, 20px) / repeat(26, 20px);
+  margin: auto;
+}
+
+.keyboard-button {
+  grid-column: span 2;
+  grid-row: span 2;
+  color: #000000;
+  background-color: #3c3b47;
+  border: 2px solid $color-button-border;
+  border-radius: 6px;
+  font-family: "FiraSansCondensed", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.special-keyboard-button {
+  background-color: $color-special-button;
+  font-size: 1.4rem;
+}
+
+.symbol-keyboard-button {
+  background-color: $color-symbol-button;
+}
+
+.keyboard-button-pressed {
+  transform: scale(0.8);
+}
+
+.keyboard-button-active {
+  background-color: #999999;
+}
+
+#Space {
+  grid-column: span 13;
+}
+
+#KeyQ,
+#BracketRight,
+#Quote {
+  grid-column: span 3;
+}
+
+.keyboard-move-in {
+  transform: translateY(453px);
+}
+
+.keyboard-button:hover {
+  background-color: #999999;
+}
+
+@media screen and (max-width: 620px) {
+  .wrapper-keyboard {
+    transform: rotateZ(-90deg);
+    top: -350px;
+    left: -160px !important;
+  }
+
+  .keyboard-move-in {
+    transform: rotateZ(-90deg) translateX(-655px);
+  }
+}

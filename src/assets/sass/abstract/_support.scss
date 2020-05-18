@@ -1,0 +1,21 @@
+.hidden {
+  display: none;
+}
+
+.disappear {
+  opacity: 0;
+}
+
+.appear {
+  opacity: 1;
+}
+
+.front {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.back {
+  opacity: 0;
+  transform: rotateY(180deg);
+}

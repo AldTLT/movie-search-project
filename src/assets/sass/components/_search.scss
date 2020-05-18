@@ -1,0 +1,83 @@
+.search {
+  width: 100%;
+}
+
+#search_form {
+  position: relative;
+  z-index: 10;
+  display: flex;
+}
+
+.row-search__input {
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+  min-width: 320px;
+  margin: auto;
+  position: relative;
+  background-color: $color-input;
+  border-top: 5px solid $main-color;
+}
+
+.search__input {
+  height: $input-height;
+  margin: auto;
+  padding: 5px 10px;
+  width: 100%;
+  font-family: "FiraSansCondensed", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  vertical-align: top;
+  color: $color-input-text;
+  border: none;
+  background-color: $color-input;
+  outline: none;
+}
+
+.search__input::placeholder {
+  color: $color-input-text;
+}
+
+.row-search__input span {
+  position: relative;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.search__button {
+  margin: auto 0 auto 5px;
+  width: $search-button-height;
+  height: 22px;
+  background-image: url(../image/search.svg);
+  background-size: 22px;
+}
+
+.search-clear {
+  width: 40px;
+  height: 40px;
+  margin: auto 5px;
+  background-image: url("../../assets/image/clear.svg");
+  background-size: 22px;
+  background-position: center center;
+}
+
+.search-keyboard {
+  width: 51px;
+  height: 22px;
+  margin: auto 0;
+  background-image: url("../../assets/image/keyboard.svg");
+  background-size: 30px;
+}
+
+.search__button:hover {
+  background-image: url("../../assets/image/search-active.svg");
+}
+
+.search-clear:hover {
+  background-image: url("../../assets/image/clear-active.svg");
+}
+
+.search-keyboard:hover {
+  background-image: url("../../assets/image/keyboard-active.svg");
+}

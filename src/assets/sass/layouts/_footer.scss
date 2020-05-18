@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: $footer-height;
+  color: $footer-text-color;
+  font-weight: 600;
+  background-color: $color-footer;
+}
